@@ -87,12 +87,25 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Honoka的Hexo博客">
-<meta property="og:url" content="https://honokabiu.github.io/index.html">
+<meta name="description" content="##进程和线程
+操作系统
+把IO设备抽象成一个文件。加上内存就成了虚拟存储器。让每个进程都有超大的空间。CPU抽象成指令集，程序员不用关注电路什么的。抽象成虚拟存储器，内存大小有限。操作系统给每个进程独立的虚拟的地址空间，会映射到真实的内存当中去。程序其实只有一块代码调用到了内存当中。操作系统加上进程就是虚拟机。云计算就是虚拟机的实际应用。
+程序是运行在上下文当中的。上下文保存在内存中。操作系统对">
+<meta property="og:type" content="article">
+<meta property="og:title" content="进程和线程笔记">
+<meta property="og:url" content="https://honokabiu.github.io/2017/03/20/process-and-thread/index.html">
 <meta property="og:site_name" content="Honoka的Hexo博客">
+<meta property="og:description" content="##进程和线程
+操作系统
+把IO设备抽象成一个文件。加上内存就成了虚拟存储器。让每个进程都有超大的空间。CPU抽象成指令集，程序员不用关注电路什么的。抽象成虚拟存储器，内存大小有限。操作系统给每个进程独立的虚拟的地址空间，会映射到真实的内存当中去。程序其实只有一块代码调用到了内存当中。操作系统加上进程就是虚拟机。云计算就是虚拟机的实际应用。
+程序是运行在上下文当中的。上下文保存在内存中。操作系统对">
+<meta property="og:updated_time" content="2017-03-20T23:59:43.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Honoka的Hexo博客">
+<meta name="twitter:title" content="进程和线程笔记">
+<meta name="twitter:description" content="##进程和线程
+操作系统
+把IO设备抽象成一个文件。加上内存就成了虚拟存储器。让每个进程都有超大的空间。CPU抽象成指令集，程序员不用关注电路什么的。抽象成虚拟存储器，内存大小有限。操作系统给每个进程独立的虚拟的地址空间，会映射到真实的内存当中去。程序其实只有一块代码调用到了内存当中。操作系统加上进程就是虚拟机。云计算就是虚拟机的实际应用。
+程序是运行在上下文当中的。上下文保存在内存中。操作系统对">
 
 
 
@@ -120,13 +133,13 @@
 
 
 
-  <link rel="canonical" href="https://honokabiu.github.io/"/>
+  <link rel="canonical" href="https://honokabiu.github.io/2017/03/20/process-and-thread/"/>
 
 
 
 
 
-  <title> Honoka的Hexo博客 </title>
+  <title> 进程和线程笔记 | Honoka的Hexo博客 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -151,9 +164,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left 
-   page-home 
- ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -236,9 +247,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -268,10 +279,7 @@
             
             
               
-                
-                <a class="post-title-link" href="/2017/03/20/process-and-thread/" itemprop="url">
-                  进程和线程笔记
-                </a>
+                进程和线程笔记
               
             
           </h1>
@@ -322,9 +330,7 @@
       
 
       
-        
-          
-            <p>##进程和线程</p>
+        <p>##进程和线程</p>
 <p>操作系统</p>
 <p>把IO设备抽象成一个文件。加上内存就成了虚拟存储器。让每个进程都有超大的空间。CPU抽象成指令集，程序员不用关注电路什么的。抽象成虚拟存储器，内存大小有限。操作系统给每个进程独立的虚拟的地址空间，会映射到真实的内存当中去。程序其实只有一块代码调用到了内存当中。<br>操作系统加上进程就是虚拟机。云计算就是虚拟机的实际应用。</p>
 <p>程序是运行在上下文当中的。<br>上下文保存在内存中。<br>操作系统对每一个进程都有一个数据结构（PCB）<br>这个结构专门用来保存上下文。<br>PCB（进程控制块）<br>谁负责切换：操作系统</p>
@@ -353,16 +359,20 @@
 <p>平衡和折中：<br>JVM就是这样</p>
 <p>JVM：<br>为什么java编程中只提多线程编程，不提多进程编程。<br>因为JVM本身就是一个进程。<br>这个进程当中会有很多线程。</p>
 
-          
+      
+    </div>
+
+    <div>
+      
         
+
       
     </div>
 
     <div>
       
-    </div>
+        
 
-    <div>
       
     </div>
 
@@ -371,268 +381,38 @@
       
 
       
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="https://honokabiu.github.io/2017/03/08/My-first-post/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Honoka">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Honoka的Hexo博客">
-    </span>
-
-    
-      <header class="post-header">
-
         
-        
-          <h1 class="post-title" itemprop="name headline">
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
+              <a href="/2017/03/08/My-first-post/" rel="next" title="Yoooooo Hexo！">
+                <i class="fa fa-chevron-left"></i> Yoooooo Hexo！
+              </a>
             
-              
-                
-                <a class="post-title-link" href="/2017/03/08/My-first-post/" itemprop="url">
-                  Yoooooo Hexo！
-                </a>
-              
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-08T23:11:38-05:00">
-                2017-03-08
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <h2 id="捣鼓了好久终于会用了！"><a href="#捣鼓了好久终于会用了！" class="headerlink" title="捣鼓了好久终于会用了！"></a>捣鼓了好久终于会用了！</h2><p>接触github有好几个星期了，捣鼓了好几天才知道怎么用hexo写出漂亮的博客QwQ。以后github首页终于不是丑丑的纯html了！<br>PS：用atom编辑器的markdown(ctrl+shift+M)写hexo博客很棒棒！</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
-      
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="https://honokabiu.github.io/2017/03/08/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Honoka">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Honoka的Hexo博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2017/03/08/hello-world/" itemprop="url">
-                  这个留着自己看
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-08T22:34:03-05:00">
-                2017-03-08
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo d -g</div></pre></td></tr></table></figure>
-<p>or<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ sudo hexo d -g</div></pre></td></tr></table></figure></p>
-<p>might be better than<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure></p>
-<p>lol</p>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-          
-        
+    <div class="post-spread">
       
     </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-  </section>
-
-  
+  </div>
 
           
           </div>
@@ -640,6 +420,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -809,6 +593,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
 
   
 
